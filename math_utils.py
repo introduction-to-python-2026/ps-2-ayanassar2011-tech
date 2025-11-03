@@ -1,10 +1,18 @@
 def find_max_number(num1, num2, num3):
-    pass  # Replace 'pass' with code
+    if (num1>  num2 and (num1 > num3)):
+     return num1
+    if (num2 > num1 and (num2 > num3)):
+      return num2
+    else:
+      return num3  # Replace 'pass' with code
 
 def find_mean(num1, num2, num3):
-    pass  # Replace 'pass' with code
+    ab = num1 + num2 + num3
+    return ab/3  # Replace 'pass' with code
 
 def find_mean_std(num1, num2, num3):
     mean = find_mean(num1, num2, num3)
-    pass  # Replace 'pass' with code
+    x =(((num1 - mean) ** 2) + ((num2 - mean) ** 2) + ((num3 - mean) ** 2))/ 3
+    std = x ** 0.5
+    return mean,std  # Replace 'pass' with code
 
